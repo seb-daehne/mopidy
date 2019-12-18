@@ -1,7 +1,7 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 LABEL maintainer "Sebastian Daehne <daehne@rshc.de>"
 
-RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y wget
+RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y wget gnupg
 
 RUN wget -q -O - https://apt.mopidy.com/mopidy.gpg | apt-key add -
 RUN wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/stretch.list
