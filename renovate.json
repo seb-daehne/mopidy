@@ -1,5 +1,12 @@
 {
   "extends": [
-    "config:base"
-  ]
+    "config:base",
+    "docker:enableMajor"
+  ],
+  
+  "docker-compose": {
+    "digest": {
+      "enabled": true
+    }
+  }
 }
