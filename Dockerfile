@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 LABEL maintainer "Sebastian Daehne <daehne@rshc.de>"
 
 RUN apt-get update && apt-get -y dist-upgrade && apt-get install -y wget gnupg
